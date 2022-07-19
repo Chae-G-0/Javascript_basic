@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 04 - 객체생성저함수</title>
+</head>
+
+<body>
+    <script>
+        // 1. 객체를 찍어내는 기계를 만드는 옛날 방법. class로 바뀜
+        function Chae(name) {
+            this.name = name;
+            this.showName = function () {
+                console.log(this.name)
+            }
+        }
+
+
+        // 인스터스란 무엇인가??
+        const 채가 = new Chae('채가');
+        채가.showName();
+
+        const 김가 = new Chae('밥밥');
+        김가.showName();
+
+        let.prototype.group = '배고파';
+
+        console.log(김가.group);
+    </script>
+</body>
+
+</html>
